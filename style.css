@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+    background-image: url("tech-planet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+}
+
+.container .navbar {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.container .navbar .sitename h1,
+span {
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: 'Roboto',
+        sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.container .navbar .sitename h1 span {
+    color: rgb(77, 148, 255);
+    font-weight: bold;
+}
+
+.container .navbar .contents li {
+    list-style-type: none;
+    font-size: 3rem;
+    font-family: 'Albert Sans',
+        sans-serif;
+    cursor: pointer;
+}
+
+.container .navbar .contents ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 70px;
+}
+
+.container .navbar .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 15%;
+}
+
+.search .text,
+.search .submit {
+    border: 2px solid rgb(77, 148, 255);
+}
+
+.search .text {
+    height: 70%;
+    width: 70%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: black;
+    display: flex;
+    font-size: 2rem;
+    padding-left: 10px;
+    color: white;
+}
+
+.search .text::-webkit-input-placeholder {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.search .submit {
+    height: 70%;
+    width: 30%;
+    background-color: rgb(77, 148, 255);
+    color: white;
+    font-family: 'Alata',
+        sans-serif;
+    font-size: 1.5rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+    box-shadow: 4px 4px 20px 0.2px rgb(61, 61, 61);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.header .left {
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.header .left h1 {
+    font-size: 10rem;
+    font-family: 'Albert Sans',
+        sans-serif;
+}
+
+.header .left .color {
+    color: rgb(77, 148, 255);
+}
+
+.header .left p {
+    font-size: 3rem;
+    text-indent: 20rem;
+    text-align: justify;
+    padding: 30px;
+    font-family: 'Alata',
+        sans-serif;
+}
+
+.header .left input {
+    width: 10%;
+    height: 40px;
+    text-decoration: none;
+    background-color: rgb(77, 148, 255);
+    color: white;
+    font-size: 2rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.header .right {
+    width: 20%;
+    height: 80%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: rgb(255, 255, 255);
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.header .right input {
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    height: 15%;
+    font-size: 1.8rem;
+    background-color: rgb(77, 148, 255);
+    color: white;
+    font-family: 'Albert Sans',
+        sans-serif;
+    font-weight: 600;
+}
+
+.header .right p {
+    color: black;
+}
+
+.header .right .form {
+    width: 70%;
+    height: 50%;
+}
+
+.header .right .form form {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.right .form form input {
+    width: 100%;
+    height: 22%;
+    border-radius: 0;
+    background-color: white;
+    border-bottom: 2px solid rgb(77, 148, 255);
+    color: black;
+    padding-left: 10px;
+}
+
+.right .form form input::-webkit-input-placeholder {
+    padding-left: 10px;
+}
+
+.right .form form .sign-in {
+    background-color: rgb(77, 148, 255);
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px 0.2px rgb(110, 110, 110);
+    color: white;
+}
+
+.right .sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 5px;
+}
+
+.right .sign-up p {
+    font-size: 1.8rem;
+    font-family: 'Alata',
+        sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.right .sign-up p a,
+.right .sign-up .login-with a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-bottom: 1px solid black;
+    color: black;
+    padding-bottom: 4px;
+}
+
+.right .sign-up .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 5px;
+}
+
+.right .sign-up .login-with {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.right .sign-up .login-with a i {
+    font-size: 2rem;
+}
+
+.login-with .a1 i {
+    color: rgb(0, 136, 255);
+}
+
+.login-with .a2 i {
+    color: rgb(255, 0, 0);
+}
+
+.login-with .a3 i {
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+}
+
+/*---------------------- SPECIAL EFFECTS--------------------- */
+.search .text:focus {
+    text-decoration: none;
+    border-color: rgb(77, 148, 255);
+    padding-left: 10px;
+}
+
+.search .text:focus::-webkit-input-placeholder {
+    padding: 0;
+}
+
+.search .submit:active {
+    transform: translateY(0.05rem);
+}
+
+.container .navbar .contents li:hover {
+    border-bottom: 2px solid rgb(77, 148, 255);
+    padding-bottom: 5px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+.header .left input:active {
+    transform: translateY(0.05rem);
+}
+
+.right .form form input:focus {
+    text-decoration: none;
+    border: 2px solid rgb(77, 148, 255);
+}
+
+.right .form form .sign-in:active {
+    transform: translateY(0.05rem);
+}
